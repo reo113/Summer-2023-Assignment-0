@@ -1,10 +1,13 @@
 function titleCaseEdit(title) {
   let titleArr = title.split(" ");
+  title ="";
   for (let i = 0; i < titleArr.length; i++) {
-    titleArr[i] = titleArr[i].charAt(0).toUpperCase() + titleArr[i].slice(1);
-   console.log(titleArr[i])
+    title += titleArr[i].charAt(0).toUpperCase() + titleArr[i].slice(1) + " ";
+    //console.log(title);
   }
+  return title;
 }
-titleCaseEdit("fosters home for imaginary friends")
-  // Do not edit this line;
-  module.exports = titleCaseEdit;
+const capTitle = titleCaseEdit("fosters home for imaginary friends")
+console.log(capTitle);
+// Do not edit this line;
+module.exports = titleCaseEdit;

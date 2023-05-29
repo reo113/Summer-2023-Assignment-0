@@ -12,8 +12,10 @@ THEN: We output "The Cow Jumped Over The Moon"
 
 ```js
 function titleCaseEdit(title) {
-  // Insert code here;
+
 }
+
+
 
 titleCaseEdit("the cow jumped over the moon") -----> "The Cow Jumped Over The Moon";
 ```
