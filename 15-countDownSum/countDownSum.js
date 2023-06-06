@@ -1,9 +1,12 @@
 class MySolution {
   countDownSum(num) {
-   return num + this.countDownSum(num-1);
+    if (num < 1) return 0;
+    return num + this.countDownSum(num - 1)
   }
 }
-console.log(countDownSum(5));
+let num = new MySolution();
+const num1 = num.countDownSum(10);
+console.log(num1);
 // Do not edit this line;
 let StudentSolution = MySolution;
 module.exports = StudentSolution;
